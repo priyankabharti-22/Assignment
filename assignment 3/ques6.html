@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>JavaScript</title>
+    <style>
+        .p1{
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">Enter your name by clicking on the button below.</p>
+    <button onclick="hello()">Hello</button>
+
+    <script>
+        function hello(){
+            v1=prompt('Enter First Name');
+            v2=prompt('Enter Last Name');
+            p1 = document.getElementsByClassName('p1')[0];
+            p1.textContent = ' Welcome '+v1 +' '+ v2+' to the World of Web. ';
+
+            console.log(' Welcome '+v1 +' '+ v2+' to the World of Web. ');
+        }
+    </script>
+</body>
+</html>
